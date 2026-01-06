@@ -1,11 +1,17 @@
 #include <iostream> 
 
 int main(){
-  
- std::string first= "HIGH";
- std::string second="LOW";
-
+  int first=1;
+ std::string name= "HIGH";
  
+
+ while (first>=0) {
+
+    std::string second="LOW";
+ }
+
+std::cout<< first <<std::endl;
+
 
 
     return 0;
