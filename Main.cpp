@@ -2,26 +2,22 @@
 #include <thread>
 #include <chrono>
 
-
 int main(){
 
-    using namespace std::chrono_literals; 
+    using namespace std::chrono_literals;
 
-    std::cout << "waiting 1 second..."<< std::endl;
+    bool state=true; 
 
-    std::this_thread::sleep_for(1s);
+    while (true) {
+        if (state) {
+            std::cout<< "HIGH" <<std::endl;
+        } else {
+            std::cout<< "LOW" <<std::endl;
+        }
 
+        std::this_thread::sleep_for(1s);
 
- std::string first= "HIGH";
- std::string second="LOW";
-
- while (true) {
-std::cout<< first <<std::endl;
-
-std::cout << "Done waiting."<<std::endl;
-
-std::cout <<second <<std::endl;
-    
- }
+        state =!state;
+    }
     return 0;
 }
