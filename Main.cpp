@@ -8,8 +8,8 @@ int main(){
 
     bool state=true; 
 
-    while (true) {
-        if (state) {
+    while (state=false) {
+        if (state=true) {
             std::cout<< "HIGH" <<std::endl;
         } else {
             std::cout<< "LOW" <<std::endl;
@@ -17,7 +17,7 @@ int main(){
 
         std::this_thread::sleep_for(1s);
 
-        state =!state;
+        
     }
     return 0;
 }
