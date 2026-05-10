@@ -1,4 +1,4 @@
-# MySecondProject
+# cpp-timer-logic
 ## Creating a simple timer swithching in every few second.
 
 ### HOW TO CREATE 
